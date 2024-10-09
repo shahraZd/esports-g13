@@ -1,0 +1,133 @@
+/* Custom Ant Design Styles */
+
+/* Define CSS Variables for Colors */
+:root {
+    --primary-color: #7228e2;       /* Primary color */
+    --info-color: #cc99ff;          /* Info color */
+    --background-color: #20132a;    /* Base background color */
+    --link-color: #cc99ff;          /* Link color */
+    --text-color: #ededed;          /* Base text color */
+    --error-color: #ff4d4f;         /* Error color */
+    --warning-color: #faad14;       /* Warning color */
+    --success-color: #52c41a;       /* Success color */
+    --primary-hover-color: #894bda; /* Primary hover color */
+}
+
+/* Typography */
+.ant-typography {
+    color: var(--text-color); /* Custom base text color */
+}
+.ant-typography.secondary {
+    color: #b0b0b0; /* Secondary text color */
+}
+/* Links */
+.ant-typography a {
+    color: var(--link-color); /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.ant-typography a:hover {
+    color: var(--primary-hover-color); /* Hover color for links */
+    text-decoration: underline; /* Underline on hover */
+}
+/* Buttons */
+.ant-btn {
+    border-radius: 4px; /* Customize border radius for all buttons */
+}
+
+.ant-btn-primary {
+    background-color: var(--primary-color); /* Custom primary button background color */
+    border-color: var(--primary-color); /* Custom primary button border color */
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--primary-hover-color); /* Custom hover color for primary buttons */
+    border-color: var(--primary-hover-color); /* Custom border color for hover state */
+}
+
+/* Input Fields */
+.ant-input {
+    border-radius: 4px; /* Customize border radius for inputs */
+    background-color: #333; /* Custom input background color */
+    color: var(--text-color); /* Input text color */
+}
+
+/* Form Components */
+.ant-form-item {
+    margin-bottom: 16px; /* Space between form items */
+}
+
+/* Cards */
+.ant-card {
+    background-color: var(--background-color); /* Custom card background color */
+    color: var(--text-color); /* Card text color */
+}
+
+/* Modals */
+.ant-modal {
+    background-color: var(--background-color); /* Custom modal background color */
+}
+
+.ant-modal-header {
+    background-color: var(--primary-color); /* Custom modal header color */
+    color: var(--text-color); /* Modal header text color */
+}
+
+/* Layout */
+.ant-layout {
+    background-color: var(--background-color); /* Custom background for layout */
+}
+
+/* Menus and Navigation */
+.ant-menu {
+    background-color: var(--background-color); /* Custom menu background color */
+    color: var(--text-color); /* Menu text color */
+}
+
+.ant-menu-item {
+    color: var(--text-color); /* Custom menu item text color */
+}
+
+.ant-menu-item:hover, .ant-menu-item:hover::after {
+    background-color: var(--primary-color); /* Background color on hover for menu items */
+}
+.ant-menu-item:hover::after {
+    border-bottom-color: var(--primary-color) !important; /* Background color on hover for menu items */
+}
+
+/* Tables */
+.ant-table {
+    background-color: var(--background-color); /* Custom table background color */
+}
+
+.ant-table-thead {
+    background-color: var(--primary-color); /* Custom table header color */
+    color: var(--text-color); /* Table header text color */
+}
+
+/* Notifications and Alerts */
+.ant-notification {
+    background-color: var(--background-color); /* Custom notification background */
+}
+
+/* Alert */
+.ant-alert {
+    background-color: var(--info-color); /* Custom alert background color */
+    color: var(--text-color); /* Alert text color */
+}
+
+/* Specific Colors for Alerts */
+.ant-alert-error {
+    background-color: var(--error-color); /* Error alert background color */
+    color: #fff; /* Error alert text color */
+}
+
+.ant-alert-warning {
+    background-color: var(--warning-color); /* Warning alert background color */
+    color: #fff; /* Warning alert text color */
+}
+
+.ant-alert-success {
+    background-color: var(--success-color); /* Success alert background color */
+    color: #fff; /* Success alert text color */
+}
